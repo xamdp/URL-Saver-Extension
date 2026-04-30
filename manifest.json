@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "URL Saver",
+    "version": "1.0",
+    "description": "Save and manage your favorite URLs in one click with this simple Chrome extension",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Save and view your links",
+        "default_icon": {}
+    },
+    "icons": {}
+}
+
