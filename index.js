@@ -39,6 +39,15 @@ function isValidUrl(string) {
 }
 
 function renderLinks() {
+	const emptyMessageEl = document.getElementById('empty-message');
+	if (mylinks.length === 0) {
+		ulEl.innerHTML = '';
+		emptyMessageEl.style.display = 'block';
+		return;
+	}
+
+	emptyMessageEl.style.display = 'none';
+
 	let listItems = '';
 	for (let link = 0; link < mylinks.length; link++) {
 		listItems += `<li class="link-item"><a target="_blank" rel="noopener noreferrer" href="${mylinks[link]}"> ${mylinks[link]}</a>
