@@ -5,6 +5,14 @@ A Chrome extension that allows users to save URLs/links for future reference. Us
 
 **Current Status**: Functional Chrome extension with persistent storage.
 
+### ⚠️ Assistant Guidelines
+
+When assisting with this project:
+- **Do not repeat yourself**. Avoid restating information already given.
+- **Provide minimal answers**. Respond only to what is explicitly asked. Do not add unsolicited explanations, guesses, or assumptions. Stick to facts.
+- **Do not guess**. If you are uncertain, state that you don't know rather than speculating.
+- **Avoid follow-up questions** unless absolutely necessary for clarification.
+
 ## Current Implementation
 
 ### Files
