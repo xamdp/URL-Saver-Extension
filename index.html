@@ -8,10 +8,14 @@
 	</head>
 	<body>
 		<div class="container">
-			<input type="text" id="input-el" />
+			<h2>My Links</h2>
+			<div class="input-group">
+				<input type="text" id="input-el" />
+				<button id="input-btn">SAVE INPUT</button>
+			</div>
 			<p id="error-message" style="color: red; display: none"></p>
-			<button id="input-btn">SAVE INPUT</button>
-			<ul id="ul-el"></ul>
+			<ul id="ul-el" placeholder="Enter URL..."></ul>
+			<p id="empty-message" class="empty-message">No links saved yet</p>
 		</div>
 
 		<script src="index.js"></script>
