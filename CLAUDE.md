@@ -29,8 +29,6 @@ When assisting with this project:
 5. On popup open, saved links are automatically loaded from storage
 
 ### Current Limitations
-- **No validation**: Accepts any text, not validated as URLs
-- **No delete functionality**: Cannot remove saved links
 - **No edit functionality**: Cannot modify saved links
 
 ## What's Missing (To Be a Functional Chrome Extension)
@@ -49,18 +47,18 @@ When assisting with this project:
    - Needs to be configured in manifest.json
 
 ### Recommended Features
-4. **URL Validation** - Ensure inputs are valid URLs
+[x] 4. **URL Validation** - Ensure inputs are valid URLs
    - Validate before saving
    - Show error messages for invalid URLs
 
-5. **Delete Links** - Remove unwanted saved links
+[x] 5. **Delete Links** - Remove unwanted saved links
    - Add delete button for each list item
    - Confirm before deletion
 
 6. **Edit Links** - Modify saved URLs
    - Allow editing existing links
 
-7. **Empty State** - Show message when no links are saved
+[x] 7. **Empty State** - Show message when no links are saved
    - Better UX when list is empty
 
 8. **Link Count** - Display number of saved links
@@ -73,6 +71,24 @@ When assisting with this project:
 10. **Search/Filter** - Find specific saved links
     - Search through saved links
     - Filter by criteria
+
+## Suggestions for Improvement
+
+Consider adding these features to enhance the extension:
+
+- **Keyboard support** – Press Enter to submit URL
+- **Delete confirmation** – Show a confirmation dialog before deleting a link
+- **Error handling** – Check for chrome.runtime.lastError in storage callbacks
+- **Edit links** – Allow users to modify saved URLs
+- **Link count** – Display number of saved links
+- **Search/Filter** – Filter links by text
+- **Clear all** – Option to delete all links at once
+- **Accessibility** – Add ARIA labels and focus styles
+- **Placeholder** – Add placeholder text to input field
+- **Toast notifications** – Show temporary messages on save/delete
+- **Storage sync** – Switch to chrome.storage.sync for cross-device sync
+- **Remove debug code** – Delete unused functions like `here()`
+- **Event delegation** – Use one listener on the list for delete buttons (performance)
 
 ## Tech Stack
 - HTML5
